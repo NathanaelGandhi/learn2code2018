@@ -58,11 +58,13 @@
         <br>
         <br>
         <br>
-        <form class="header-job-search">
+        <form class="header-job-search" action="http://localhost:5000/search" method="POST">
           <div class="input-keyword">
-            <input class="form-control" placeholder="Skills or experience" type="text"> </div>
+            <input class="form-control" placeholder="Skills or experience" type="text" name="skillsandexp">
+          </div>
           <div class="input-location">
-            <input class="form-control" placeholder="City, state or zip" type="text"> </div>
+            <input class="form-control" placeholder="City, state or zip" type="text" name="location">
+          </div>
           <div class="btn-search">
             <button class="btn btn-primary" type="submit">Find students</button>
             <a href="/jobs">Advanced Job Search</a>
